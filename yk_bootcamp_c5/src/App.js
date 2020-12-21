@@ -1,11 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Parent from './Parent';
+import CounterContext from './CounterContext';
+
 
 function App() {
   return (
-    <div className="App">
-     
+    <CounterContext.Provider value = {20}>
+    <div>
+     <Parent/>
     </div>
+    </CounterContext.Provider>
   );
 }
 
