@@ -17,5 +17,5 @@ function App() {
     </CounterContext2.Provider>
   );
 }
-
+// 1:10 time:
 export default App;
