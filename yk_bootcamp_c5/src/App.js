@@ -1,16 +1,20 @@
-
+import React,{useState} from 'react';
 import './App.css';
 import Parent from './Parent';
-import CounterContext from './CounterContext';
+import CounterContext2 from './CounterContext2';
 
 
 function App() {
+
+  let countState = useState(1);
+
   return (
-    <CounterContext.Provider value = {20}>
+
+    <CounterContext2.Provider value = {countState}>
     <div>
      <Parent/>
     </div>
-    </CounterContext.Provider>
+    </CounterContext2.Provider>
   );
 }
 
